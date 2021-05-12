@@ -3,9 +3,10 @@
     padding: 0px;
 }
 h2{
-    padding-bottom: 7px;
-    color: whitesmoke;
+    padding-bottom: 17px;
+    color: #FFF;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
 }
 .main_b{
    height: 100vh;
@@ -22,6 +23,7 @@ h2{
    margin-right: auto;
    background-color: RGBA(252,126,0,0.2);
    margin-top: 25vh;
+
 }
 .main_data{
   display: flex;
@@ -29,6 +31,7 @@ h2{
   align-items: center;
   padding-top: 30px;
   padding-bottom: 16px;
+  box-shadow: 2px 5px 15px 0px wheat;
 }
 .optn_sec{
     width: 100%;
@@ -39,7 +42,7 @@ h2{
 }
 .optn_sec h2{
     position: fixed;
-    margin-top: 5px;
+    margin-top: 3%;
     font-size:30px;
 }
 .optn_sec select{
@@ -113,16 +116,30 @@ input{
 #hmFm,#hmTo{
  border-style: solid;
  border-width: 1px;
- padding-left: 3px;
- padding-right: 3px;
- color: rgb(228, 135, 135);
+ padding: 3px;
+ color: rgb(29, 28, 28);
+ border-color: rgb(197, 159, 145);
 }
 #hmTo{
-  color: rgb(105, 179, 105);
+  color: rgb(6, 17, 6);
 }
 
 #mainText{
     display: none;
     background-color: whitesmoke;
     letter-spacing: 1px;
+}
+
+.waiting{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: RGBA(0,0,0,0.8);
+    height: 44vh;
+    position: fixed;
+    background-image: url('./images/loader.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 13vh 13vw;
+    display: none;
 }

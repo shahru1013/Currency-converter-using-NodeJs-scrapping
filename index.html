@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Currency Convertor</title>
+    <title>Currency converter</title>
 </head>
 <body>
     <script src="index.js"></script>
     <div class="main_b">
         <div class="center_sec">
-           
+           <div class="waiting" id="waitdiv"></div>
             <div class="main_data">
                 <h2>Currency Convertor</h2>
                 <input type="text" id="amount" placeholder="Amount">
@@ -29,11 +29,11 @@
                 </div>
                 <div class="btn_sec">
                     <button onclick="erase()">Erase</button>
-                    <button onclick="sendReq()">Show Result</button>
+                    <button onclick="sendReq()">Show Difference</button>
 
                 </div>
                 <div class="res_sec">
-                    <p id="resText"><span id="mainText"> <span id="hmFm" style="font-size: 22px;"></span> <span id="midTx"></span> <span id="hmTo" style="font-size: 22px;"></span> <span id="lastTx"></span></span> <span id="demo">------------------------</span></p>
+                    <p id="resText"><span id="mainText"> <span id="hmFm" style="font-size: 24px;"></span> <span id="midTx"></span> <span id="hmTo" style="font-size: 24px;"></span> <span id="lastTx"></span></span> <span id="demo">------------------------</span></p>
                 </div>
             </div>
         </div>

@@ -1,5 +1,11 @@
 
 const sendReq = () =>{
+    // clear result text section
+    let mainTxt = document.getElementById('mainText');
+    let demo = document.getElementById('demo');
+    demo.style.display="block";
+    mainTxt.style.display="none";
+
     // Get selected currency
     let fromCurrency = document.getElementById('from');
     let fromCurrencyText = fromCurrency.options[fromCurrency.selectedIndex].text;
@@ -14,6 +20,10 @@ const sendReq = () =>{
         if(amount!=null && amount>0){
             // Send request To server for scrape
             getScrapeData(fromCurrencyText,toCurrencyText,amount);
+            // start waiting gif
+            let waitD = document.getElementById('waitdiv');
+            waitD.style.display="block";
+
         }
         else{
             alert('Fill Amount!')
@@ -50,11 +60,21 @@ const getScrapeData=(fromCur,toCur,amount)=>{
         let mT = document.getElementById('midTx');
         let mainTxt = document.getElementById('mainText');
         let demo = document.getElementById('demo');
+        //put those data into UI
         demo.style.display="none";
         mainTxt.style.display="block";
         fT.innerHTML=response.data.amount+" "+response.data.to;
         mT.innerHTML=" = ";
         tT.innerHTML=response.data.from;
+        // stop waiting gif
+        let waitD = document.getElementById('waitdiv');
+        waitD.style.display="none";
         //resultSet.innerHTML=response.data.amount+" "+response.data.to+' = '+response.data.from;
+    }).catch((error)=>{
+        if(error){
+            // stop waiting gif
+        let waitD = document.getElementById('waitdiv');
+        waitD.style.display="none";
+        }
     })
 }
