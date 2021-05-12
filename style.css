@@ -1,0 +1,128 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+h2{
+    padding-bottom: 7px;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main_b{
+   height: 100vh;
+   width: 100vw;
+   background-color: antiquewhite;
+   background-image: url('./images/images.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: fixed;
+}
+.center_sec{
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: RGBA(252,126,0,0.2);
+   margin-top: 25vh;
+}
+.main_data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+.optn_sec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.optn_sec h2{
+    position: fixed;
+    margin-top: 5px;
+    font-size:30px;
+}
+.optn_sec select{
+   width: 40%;
+   height: 30px;
+   font-size: 17px;
+   color: rgb(110, 110, 110);
+   outline: none;
+   padding-left: 10px;
+   border-color: chocolate;
+   border-radius: 3px;
+   letter-spacing: 1px;
+}
+.btn_sec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn_sec button{
+    width: 30%;
+    height: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-width: 0px;
+    box-shadow: 2px 5px 15px 0px wheat;
+    font-size: 17px;
+    color: rgb(185, 136, 127);
+    letter-spacing: 1px;
+}
+.res_sec{
+   padding: 20px;
+  
+}
+
+.opn{
+    margin-left: 0px;
+    margin-right: 7%;
+}
+.res_sec p{
+    font-size: 18px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    border-color: rgb(240, 192, 192);
+    text-align: center;
+    color: rgb(139, 128, 126);
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 0px rgb(240, 192, 192);
+}
+button:active{
+    background-color: rgb(240, 192, 192);
+}
+
+input{
+    outline: none;
+    height: 29px;
+    width: 40%;
+    text-indent: 10px;
+    border-width: 2px;
+    color: rgb(110, 110, 110);
+    border-color: chocolate;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+#hmFm,#hmTo{
+ border-style: solid;
+ border-width: 1px;
+ padding-left: 3px;
+ padding-right: 3px;
+ color: rgb(228, 135, 135);
+}
+#hmTo{
+  color: rgb(105, 179, 105);
+}
+
+#mainText{
+    display: none;
+    background-color: whitesmoke;
+    letter-spacing: 1px;
+}
